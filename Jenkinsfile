@@ -9,7 +9,7 @@ def github_repository = 'https://github.com/5jitibor/DevOps.git'
 def git_credentials   = 'github-multibranch'
 
 if(destination_environment == 'prod' ) {
-        branch = 'master'
+        branch = 'main'
 }
 
 cluster = "${cluster_name}-${destination_environment}"
