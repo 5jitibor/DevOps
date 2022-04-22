@@ -11,7 +11,7 @@ import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
 import javax.validation.Valid
 
-@Api(value = "Existing Building Book Service", description = "Existing Building Book API")
+@Api(value = "Existing Building Book Service", description = "Existing Building Book API", tags = ["Genres"])
 @RequestMapping("genres")
 interface GenreControllerApi {
 
@@ -19,8 +19,7 @@ interface GenreControllerApi {
         value = "Create a new genre.",
         nickname = "createGenre",
         notes = "Create a new genre.",
-        response = GenreDTO::class,
-        tags = ["Genres"]
+        response = GenreDTO::class
     )
     @ApiResponses(
         value = [

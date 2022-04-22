@@ -10,7 +10,7 @@ import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
 import javax.validation.Valid
 
-@Api(value = "Existing Building Book Service", description = "Existing Building Book API")
+@Api(value = "Existing Building Book Service", description = "Existing Building Book API", tags = ["Actors"])
 @RequestMapping("actors")
 interface ActorControllerApi {
 
@@ -18,8 +18,7 @@ interface ActorControllerApi {
         value = "Create a new actor.",
         nickname = "createActor",
         notes = "Create a new actor.",
-        response = ActorDTO::class,
-        tags = ["Actors"]
+        response = ActorDTO::class
     )
     @ApiResponses(
         value = [
